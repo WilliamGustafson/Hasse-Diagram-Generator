@@ -1,0 +1,8 @@
+node{a}{0,0}{$a$}
+node{b}{0,1}{$b$}
+node{c}{1,0}{$c$}
+node{d}{1,1}{$d$}
+
+draw{a}{b}
+draw{c}{b}
+draw{c}{d}

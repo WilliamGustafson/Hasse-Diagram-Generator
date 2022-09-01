@@ -1,0 +1,29 @@
+#This code when input to hasse.py loi describes the poset
+#     a
+#    / \
+#   b   c
+#but it is drawn upside down so the result is the poset of upper order ideals of the poset
+#   b   c
+#    \ /
+#     a
+#
+#The whole poset is always drawn but faded and the upper order ideals are drawn with full opacity
+
+
+\coordinate(a)at(0,0);
+\coordinate(b)at(1,1);
+\coordinate(c)at(-1,1);
+
+draw{b}{a}
+draw{c}{a}
+
+\draw[opacity=.3](c)--(a)--(b);
+\foreach\i in{a,b,c}{\fill[opacity=.3](\i)circle(1pt);}
+
+
+\fill(a)circle(1pt);
+stick{a}
+\fill(b)circle(1pt);
+stick{b}
+\fill(c)circle(1pt);
+stick{c}

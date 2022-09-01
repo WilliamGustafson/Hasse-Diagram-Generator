@@ -1,0 +1,19 @@
+#This file describes the generator-enriched lattice
+#        d
+#      / | \
+#     b  |  c
+#      \ | /
+#        a
+#as input for hasse.py Minor
+
+node{a}{0,0}{$\emptyset$}
+node{b}{-1,1}{$1$}
+node{c}{1,1}{$2$}
+node{d}{0,2}{$12$}
+
+draw{a}{b}
+draw{a}{c}
+draw{a}{d}
+
+draw{b}{d}
+draw{c}{d}
